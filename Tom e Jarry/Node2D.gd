@@ -29,7 +29,8 @@ func _process(delta):
 	var random_number_x = rand_range(-10, 10)
 	var random_number_y = rand_range(-10, 10)
 	var random_number_x_1 = rand_range(-10, 10)
-	var random_number_y_1 = rand_range(-10, 10)
+	var random_number_y_1 = rand_range(-10, 10) 
+
 
 	# adiciona um valor aleatório a posição atual dos objetos e define essa posição como posição atual
 	# clamp -> se o valor é menor que o mínimo, retorna o mínimo, se o valor é maior que o máximo, retorna o máximo. Caso contrário retorna o valor atual 
@@ -56,3 +57,7 @@ func _process(delta):
 		test_value = false
 		test_value1 = false
 		$RichTextLabel.text = "BUUUUUUUUMMMMMM"
+		$Sprite.position.x = $tom.position.x
+		$Sprite.position.y = $tom.position.y
+		$Sprite/AnimationPlayer.play("explosão")
+		
