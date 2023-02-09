@@ -39,6 +39,12 @@ tracks/0/keys = {
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 
+[node name="time" type="RichTextLabel" parent="."]
+margin_left = 532.0
+margin_top = 59.0
+margin_right = 634.0
+margin_bottom = 130.0
+
 [node name="tom" type="Sprite" parent="."]
 position = Vector2( 307.156, 282 )
 scale = Vector2( 0.428517, 0.439604 )
